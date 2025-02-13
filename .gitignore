@@ -43,3 +43,6 @@ next-env.d.ts
 /media
 
 *.db
+
+# clerk configuration (can include secrets)
+/.clerk/

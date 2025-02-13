@@ -19,6 +19,19 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    avatar: {
+      Component: {
+        path: './components/payload/clerk-user-button#ClerkUserButton',
+      },
+    },
+    components: {
+      providers: ['./providers/auth/clerk-auth-provider#ClerkAuthProvider'],
+      logout: {
+        Button: {
+          path: './components/payload/custom-logout#CustomLogout',
+        },
+      },
+    },
   },
   collections: [Users, Media],
   editor: lexicalEditor(),
