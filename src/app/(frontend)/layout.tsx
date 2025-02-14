@@ -20,7 +20,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>
+        <body className='dark'>
           <div className="w-full">
             <SignedOut>
               <SignInButton />

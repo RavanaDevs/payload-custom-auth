@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url'
 import config from '@/payload.config'
 import './styles.css'
 import { getPayload } from 'payload'
+import { Button } from '@/components/ui/button'
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -20,6 +21,7 @@ export default async function HomePage() {
       <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
+      <Button>Click Me</Button>
       <div className="content">
         <picture>
           <source srcSet="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-favicon.svg" />
